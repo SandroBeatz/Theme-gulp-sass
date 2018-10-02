@@ -1,0 +1,29 @@
+/* ========================== GLOBAL STYLES =====================================  */
+body {
+  font-family: "Montserrat";
+  background: #fff; }
+
+.wrapper {
+  position: relative;
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+  overflow: hidden; }
+
+.height_intro {
+  height: 100vh; }
+
+input, a, button, select, textarea, .item {
+  outline: none !important;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+
+.text_center {
+  text-align: center; }
+
+.text_right {
+  text-align: right; }
+
+.text_left {
+  text-align: left; }

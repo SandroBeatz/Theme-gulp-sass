@@ -1,0 +1,38 @@
+@import "var-main";
+/* ============================ TYPOGRAPHY =================================  */
+p {
+  font-size: $size * 1.2;
+  line-height: $line-height * 1.2;
+}
+
+ul {
+  li {}
+}
+ol {
+  li {}
+}
+
+strong {}
+b {}
+em {}
+
+small {}
+
+//Caption H1-H6
+$HConfig: '1' 38px 35px bold $color-text,
+          '2' 34px 35px normal $color-text-2,
+          '3' 28px 30px bold $color-main,
+          '4' 24px 30px bold $color-text-2,
+          '5' 18px 25px normal $color-text-3,
+          '6' 16px 20px bold $color-main;
+
+@each $size in $HConfig {
+  h#{nth($size, 1)} {
+    margin: 0;
+    font-size: nth($size, 2);
+    padding-bottom: nth($size, 3);
+    font-weight: nth($size, 4);
+    color: nth($size, 5);
+  }
+}
+//Caption H1-H6 End

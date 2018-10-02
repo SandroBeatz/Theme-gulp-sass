@@ -1,0 +1,35 @@
+@import "var-main";
+
+/* ========================== BUTTON ==================================  */
+
+/*_______ button-main ________*/
+.btn_main {
+    display: inline-block;
+    padding: 9px 35px;
+    font-size: 14px;
+    color: #fff;
+    background: $color_main;
+    text-decoration: none;
+    border: none;
+    &:hover {}
+    &:focus {}
+    &:active {
+        transform: scale(0.9);
+    }
+
+}
+
+
+/*_______ button-order ________*/
+.btn_order {}
+
+/*_______ paginator ________*/
+.paginator {}
+
+/*_______ breadcrumps ________*/
+.breadcrumps {}
+
+/*_______ networks ________*/
+.networks {}
+
+

@@ -1,0 +1,271 @@
+/* ========================== GLOBAL STYLES =====================================  */
+body {
+  font-family: "Montserrat";
+  background: #fff;
+  font-size: 14px; }
+
+.wrapper {
+  position: relative;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s; }
+
+input, a, button, select, textarea, .item {
+  outline: none !important;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+
+.row:before, .row:after {
+  content: none; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.text-left {
+  text-align: left; }
+
+/* ================================ MODAL =======================================  */
+/* ============================ CONTROLLER ===================================  */
+/*_______ slick-slider ________*/
+/*_______ button-anchor ________*/
+/*_______ load-inner ________*/
+/* ========================== BUTTON ==================================  */
+/*_______ button-main ________*/
+.btn_main {
+  display: inline-block;
+  padding: 9px 35px;
+  font-size: 14px;
+  color: #fff;
+  background: #e21515;
+  text-decoration: none;
+  border: none; }
+  .btn_main:active {
+    -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+            transform: scale(0.9); }
+
+/*_______ button-order ________*/
+/*_______ paginator ________*/
+/*_______ breadcrumps ________*/
+/*_______ networks ________*/
+/* ============================ TYPOGRAPHY =================================  */
+p {
+  font-size: 16.8px;
+  line-height: 24px; }
+
+h1 {
+  margin: 0;
+  font-size: 38px;
+  padding-bottom: 35px;
+  font-weight: bold;
+  color: #151515; }
+
+h2 {
+  margin: 0;
+  font-size: 34px;
+  padding-bottom: 35px;
+  font-weight: normal;
+  color: #434343; }
+
+h3 {
+  margin: 0;
+  font-size: 28px;
+  padding-bottom: 30px;
+  font-weight: bold;
+  color: #e21515; }
+
+h4 {
+  margin: 0;
+  font-size: 24px;
+  padding-bottom: 30px;
+  font-weight: bold;
+  color: #434343; }
+
+h5 {
+  margin: 0;
+  font-size: 18px;
+  padding-bottom: 25px;
+  font-weight: normal;
+  color: #434343; }
+
+h6 {
+  margin: 0;
+  font-size: 16px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  color: #e21515; }
+
+header {
+  background: #1a1a1a;
+  text-align: right;
+  padding: 15px 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0; }
+  header .list_navbar {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: hidden;
+    height: 0px;
+    visibility: hidden;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    text-align: center; }
+    header .list_navbar li {
+      padding: 0; }
+      header .list_navbar li a {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        padding: 25px 20px;
+        font-size: 16px;
+        font-weight: 300; }
+        header .list_navbar li a:hover {
+          background: #55ae9c; }
+  header .btn_navbar {
+    background: none;
+    border: none;
+    font-size: 34px;
+    color: #fff; }
+  header.open_navbar .list_navbar {
+    height: 90px;
+    visibility: visible; }
+
+/****----------- Header End ------------****/
+.slider_main {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  height: 500px; }
+  .slider_main .item__slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 500px;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s; }
+    .slider_main .item__slide img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .slider_main .btn_arrows {
+    background: rgba(0, 0, 0, 0.4);
+    border: none;
+    color: #fff;
+    display: inline-block;
+    padding: 12px;
+    position: absolute;
+    font-size: 18px;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    z-index: 555; }
+    .slider_main .btn_arrows:hover {
+      background: #000; }
+    .slider_main .btn_arrows.left {
+      top: 50%;
+      left: 30px;
+      margin-top: -30px; }
+    .slider_main .btn_arrows.right {
+      top: 50%;
+      right: 30px;
+      margin-top: -30px; }
+  .slider_main .caption_slider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 55;
+    text-align: center;
+    padding: 40px; }
+    .slider_main .caption_slider h1 {
+      font-size: 30px;
+      color: #fff;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); }
+  .slider_main .fade_in {
+    -webkit-animation-name: rotate;
+            animation-name: rotate;
+    -webkit-animation-duration: 2.5s;
+            animation-duration: 2.5s; }
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5); }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); } }
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5); }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); } }
+
+.sec1 {
+  padding: 0;
+  height: auto;
+  background: #fffd98; }
+  .sec1 .title {
+    width: 100%;
+    padding: 20px;
+    background: #2653b4;
+    color: #fff;
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    height: 70px;
+    margin: 0;
+    z-index: 999;
+    top: 0; }
+  .sec1 .container {
+    padding: 90px 0; }
+
+.sec2 {
+  padding: 0;
+  height: auto;
+  position: relative;
+  background: #eafaed; }
+  .sec2 .title {
+    width: 100%;
+    padding: 20px;
+    background: #2653b4;
+    color: #fff;
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    height: 70px;
+    z-index: 999;
+    margin: 0;
+    top: 0; }
+  .sec2 .container {
+    padding: 90px 0; }
+
+/****----------- Sections End ------------****/
+/****----------- Footer End ------------****/
+@media (min-width: 430px) and (max-width: 767px) {
+  .container {
+    width: 400px; } }

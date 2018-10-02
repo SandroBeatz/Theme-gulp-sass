@@ -1,0 +1,30 @@
+@import "var-main";
+/* ========================== GLOBAL STYLES =====================================  */
+body {
+    font-family: $fonts;
+    background: $bg-main;
+    font-size: $size;
+}
+
+
+.wrapper {
+    position: relative;
+    transition: $transition-main + 0.1;
+}
+
+
+input, a, button, select, textarea, .item {
+    outline: none!important;
+    transition: $transition-main;
+}
+
+.row {
+    &:before,
+    &:after{
+        content: none;
+    }
+}
+
+.text-center {text-align: center;}
+.text-right {text-align: right;}
+.text-left {text-align: left;}

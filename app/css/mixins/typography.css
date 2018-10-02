@@ -1,0 +1,48 @@
+/* ============================ TYPOGRAPHY =================================  */
+b, strong {
+  font-weight: bold; }
+
+em {
+  font-style: italic; }
+
+a {
+  color: #e21515;
+  text-decoration: underline; }
+  a:hover {
+    color: #a82f2f;
+    text-decoration: none; }
+  a:focus {
+    color: #a82f2f;
+    text-decoration: none; }
+
+p {
+  font-size: 14px;
+  color: #434343;
+  font-weight: normal;
+  line-height: 22px;
+  margin: 0;
+  padding-bottom: 25px; }
+
+ul {
+  padding-left: 15px;
+  padding-bottom: 25px;
+  margin: 0;
+  list-style: disc; }
+  ul li {
+    font-size: 14px;
+    color: #151515;
+    font-weight: normal;
+    padding: 5px 0;
+    line-height: 22px; }
+
+ol {
+  padding-left: 15px;
+  padding-bottom: 25px;
+  margin: 0;
+  list-style: decimal; }
+  ol li {
+    font-size: 14px;
+    color: #151515;
+    font-weight: normal;
+    padding: 5px 0;
+    line-height: 22px; }

@@ -1,0 +1,15 @@
+@import "mixins/var-main";
+
+//Desktop-small
+@media screen and (max-width: #{$small-desktop}) {}
+
+//Tablet
+@media screen and (max-width: #{$tablet}) {}
+
+//Mobile
+@media screen and (max-width: #{$mobile}) {}
+
+//Mobile-rotate
+@media (min-width: 430px) and (max-width: #{$rotate-mobile}) {
+  .container {width: 400px;}
+}

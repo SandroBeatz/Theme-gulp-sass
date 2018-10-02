@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta property="og:image" content="path/to/image.jpg">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <title>Главная</title>
+        <!--Main-Style-->
+        <link rel="stylesheet" type="text/css" href="css/libs.min.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <!--Fonts-->
+        <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic" rel="stylesheet">
+    </head>
+
+    <body>
+        <!--start buttons Fixed-->
+        <div id="fixedBTN" class="block-btn-fixed">
+            <a href="#top" class="btn-up anchor"><i class="lnr lnr-arrow-up"></i></a>
+        </div>
+        <!--end buttons Fixed-->
+        <!--start modal (class button - "popup-with-move-anim") -->
+        <div id="small_modal" class="modal_form zoom-anim-dialog mfp-hide">
+            <div class="block_form">
+                <form action="">
+                    <div class="box_caption_form">
+                        <p class="title">Заказать обратный звонок</p>
+                        <span class="sub_title">Оставьте ваш номер телефона и получите бесплатную консультацию.</span>
+                    </div>
+                    <div class="group">
+                        <input type="text" name="textfield" placeholder="Имя">
+                    </div>
+                    <div class="group">
+                        <input type="tel" name="textfield" placeholder="Телефон">
+                    </div>
+                    <div class="btn_group"><button type="submit" class="btn_main">Отправить</button></div>
+                    <div class="textCenter">
+                        <span class="sub_form">Мы свяжемся с Вами в течение 10 минут</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--end modal-->
+
+        <!--Wrapper-->
+        <div id="top" class="wrapper">
+            <!--start Header-->
+            <header id="header">
+                <div class="container"><button onclick="openNavbar()" class="btn_navbar"><span class="lnr lnr-menu"></span></button></div>
+                <div class="container">
+                    <ul class="list_navbar">
+                        <li><a href="#small_modal" class="popup-with-move-anim">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Work</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </div>
+            </header>
+            <!--end Header-->
+            <section class="grid">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque odit provident quia? Aut autem corporis culpa, error ex expedita explicabo hic id iste minus modi quibusdam repellat tempora unde vero?</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque odit provident quia? Aut autem corporis culpa, error ex expedita explicabo hic id iste minus modi quibusdam repellat tempora unde vero?</p>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque odit provident quia? Aut autem corporis culpa, error ex expedita explicabo hic id iste minus modi quibusdam repellat tempora unde vero?</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <h4>Lorem ipsum dolor sit amet.</h4>
+            <h5>Lorem ipsum dolor sit amet.</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid, cupiditate dignissimos dolorem earum libero minima quasi ullam. Accusamus amet aperiam asperiores beatae consequatur cumque dolorum eligendi enim fugit in, inventore ipsa iusto labore molestiae, quis quisquam ratione repellat rerum tempora ut! Ab dolore ea eveniet iste maxime pariatur repellat.</p>
+            <!--start section.-->
+            <section class="slider_main">
+                <div class="item__slide">
+                    <img src="img/slider/slide1.jpg" alt="">
+                    <div class="caption_slider">
+                        <h1>Slide1</h1>
+                    </div>
+                </div>
+                <div class="item__slide">
+                    <img src="img/slider/slide2.jpg" alt="">
+                    <div class="caption_slider">
+                        <h1>Slide2</h1>
+                    </div>
+                </div>
+                <div class="item__slide">
+                    <img src="img/slider/slide3.jpg" alt="">
+                    <div class="caption_slider">
+                        <h1>Slide3</h1>
+                    </div>
+                </div>
+                <button class="btn_arrows left" onclick="plusSlides(-1)"><i class="lnr lnr-arrow-left"></i></button>
+                <button class="btn_arrows right" onclick="plusSlides(1)"><i class="lnr lnr-arrow-right"></i></button>
+                <ul class="slides_dots">
+                    <li class="dots" onclick="currentSlide(1)">1</li>
+                    <li class="dots" onclick="currentSlide(2)">2</li>
+                    <li class="dots" onclick="currentSlide(3)">3</li>
+                </ul>
+            </section>
+
+            <section class="sec1">
+                <h2 class="title">Lorem ipsum dolor sit amet</h2>
+                <div class="container">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi aperiam aspernatur consectetur consequuntur deserunt dolorem dolores ea expedita, hic laboriosam mollitia nulla numquam officia pariatur provident, repellendus temporibus tenetur veniam voluptate! Commodi deleniti fugiat in labore laudantium officia quae unde? Accusantium alias cumque debitis eos ipsum odit repudiandae sequi, voluptatibus! Alias architecto asperiores corporis culpa fuga minima natus quam qui, recusandae suscipit ullam unde veniam voluptatem. Accusamus cum debitis delectus dolorem eaque error explicabo ipsam minima molestiae, molestias nam, odit perferendis possimus praesentium quas quasi qui quis, quo sequi.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi aperiam aspernatur consectetur consequuntur deserunt dolorem dolores ea expedita, hic laboriosam mollitia nulla numquam officia pariatur provident, repellendus temporibus tenetur veniam voluptate! Commodi deleniti fugiat in labore laudantium officia quae unde? Accusantium alias cumque debitis eos ipsum odit repudiandae sequi, voluptatibus! Alias architecto asperiores corporis culpa fuga minima natus quam qui, recusandae suscipit ullam unde veniam voluptatem. Accusamus cum debitis delectus dolorem eaque error explicabo ipsam minima molestiae, molestias nam, odit perferendis possimus praesentium quas quasi qui quis, quo sequi.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi aperiam aspernatur consectetur consequuntur deserunt dolorem dolores ea expedita, hic laboriosam mollitia nulla numquam officia pariatur provident, repellendus temporibus tenetur veniam voluptate! Commodi deleniti fugiat in labore laudantium officia quae unde? Accusantium alias cumque debitis eos ipsum odit repudiandae sequi, voluptatibus! Alias architecto asperiores corporis culpa fuga minima natus quam qui, recusandae suscipit ullam unde veniam voluptatem. Accusamus cum debitis delectus dolorem eaque error explicabo ipsam minima molestiae, molestias nam, odit perferendis possimus praesentium quas quasi qui quis, quo sequi.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi aperiam aspernatur consectetur consequuntur deserunt dolorem dolores ea expedita, hic laboriosam mollitia nulla numquam officia pariatur provident, repellendus temporibus tenetur veniam voluptate! Commodi deleniti fugiat in labore laudantium officia quae unde? Accusantium alias cumque debitis eos ipsum odit repudiandae sequi, voluptatibus! Alias architecto asperiores corporis culpa fuga minima natus quam qui, recusandae suscipit ullam unde veniam voluptatem. Accusamus cum debitis delectus dolorem eaque error explicabo ipsam minima molestiae, molestias nam, odit perferendis possimus praesentium quas quasi qui quis, quo sequi.</p>
+                </div>
+            </section>
+            <section class="sec2">
+                <h2 class="title">Consectetur adipisicing elit</h2>
+                <div class="container">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi aperiam aspernatur consectetur consequuntur deserunt dolorem dolores ea expedita, hic laboriosam mollitia nulla numquam officia pariatur provident, repellendus temporibus tenetur veniam voluptate! Commodi deleniti fugiat in labore laudantium officia quae unde? Accusantium alias cumque debitis eos ipsum odit repudiandae sequi, voluptatibus! Alias architecto asperiores corporis culpa fuga minima natus quam qui, recusandae suscipit ullam unde veniam voluptatem. Accusamus cum debitis delectus dolorem eaque error explicabo ipsam minima molestiae, molestias nam, odit perferendis possimus praesentium quas quasi qui quis, quo sequi.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi aperiam aspernatur consectetur consequuntur deserunt dolorem dolores ea expedita, hic laboriosam mollitia nulla numquam officia pariatur provident, repellendus temporibus tenetur veniam voluptate! Commodi deleniti fugiat in labore laudantium officia quae unde? Accusantium alias cumque debitis eos ipsum odit repudiandae sequi, voluptatibus! Alias architecto asperiores corporis culpa fuga minima natus quam qui, recusandae suscipit ullam unde veniam voluptatem. Accusamus cum debitis delectus dolorem eaque error explicabo ipsam minima molestiae, molestias nam, odit perferendis possimus praesentium quas quasi qui quis, quo sequi.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi aperiam aspernatur consectetur consequuntur deserunt dolorem dolores ea expedita, hic laboriosam mollitia nulla numquam officia pariatur provident, repellendus temporibus tenetur veniam voluptate! Commodi deleniti fugiat in labore laudantium officia quae unde? Accusantium alias cumque debitis eos ipsum odit repudiandae sequi, voluptatibus! Alias architecto asperiores corporis culpa fuga minima natus quam qui, recusandae suscipit ullam unde veniam voluptatem. Accusamus cum debitis delectus dolorem eaque error explicabo ipsam minima molestiae, molestias nam, odit perferendis possimus praesentium quas quasi qui quis, quo sequi.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi aperiam aspernatur consectetur consequuntur deserunt dolorem dolores ea expedita, hic laboriosam mollitia nulla numquam officia pariatur provident, repellendus temporibus tenetur veniam voluptate! Commodi deleniti fugiat in labore laudantium officia quae unde? Accusantium alias cumque debitis eos ipsum odit repudiandae sequi, voluptatibus! Alias architecto asperiores corporis culpa fuga minima natus quam qui, recusandae suscipit ullam unde veniam voluptatem. Accusamus cum debitis delectus dolorem eaque error explicabo ipsam minima molestiae, molestias nam, odit perferendis possimus praesentium quas quasi qui quis, quo sequi.</p>
+                </div>
+            </section>
+            <section class="sec1">
+                <h2 class="title">Lorem ipsum dolor sit amet</h2>
+                <div class="container">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi aperiam aspernatur consectetur consequuntur deserunt dolorem dolores ea expedita, hic laboriosam mollitia nulla numquam officia pariatur provident, repellendus temporibus tenetur veniam voluptate! Commodi deleniti fugiat in labore laudantium officia quae unde? Accusantium alias cumque debitis eos ipsum odit repudiandae sequi, voluptatibus! Alias architecto asperiores corporis culpa fuga minima natus quam qui, recusandae suscipit ullam unde veniam voluptatem. Accusamus cum debitis delectus dolorem eaque error explicabo ipsam minima molestiae, molestias nam, odit perferendis possimus praesentium quas quasi qui quis, quo sequi.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi aperiam aspernatur consectetur consequuntur deserunt dolorem dolores ea expedita, hic laboriosam mollitia nulla numquam officia pariatur provident, repellendus temporibus tenetur veniam voluptate! Commodi deleniti fugiat in labore laudantium officia quae unde? Accusantium alias cumque debitis eos ipsum odit repudiandae sequi, voluptatibus! Alias architecto asperiores corporis culpa fuga minima natus quam qui, recusandae suscipit ullam unde veniam voluptatem. Accusamus cum debitis delectus dolorem eaque error explicabo ipsam minima molestiae, molestias nam, odit perferendis possimus praesentium quas quasi qui quis, quo sequi.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi aperiam aspernatur consectetur consequuntur deserunt dolorem dolores ea expedita, hic laboriosam mollitia nulla numquam officia pariatur provident, repellendus temporibus tenetur veniam voluptate! Commodi deleniti fugiat in labore laudantium officia quae unde? Accusantium alias cumque debitis eos ipsum odit repudiandae sequi, voluptatibus! Alias architecto asperiores corporis culpa fuga minima natus quam qui, recusandae suscipit ullam unde veniam voluptatem. Accusamus cum debitis delectus dolorem eaque error explicabo ipsam minima molestiae, molestias nam, odit perferendis possimus praesentium quas quasi qui quis, quo sequi.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi aperiam aspernatur consectetur consequuntur deserunt dolorem dolores ea expedita, hic laboriosam mollitia nulla numquam officia pariatur provident, repellendus temporibus tenetur veniam voluptate! Commodi deleniti fugiat in labore laudantium officia quae unde? Accusantium alias cumque debitis eos ipsum odit repudiandae sequi, voluptatibus! Alias architecto asperiores corporis culpa fuga minima natus quam qui, recusandae suscipit ullam unde veniam voluptatem. Accusamus cum debitis delectus dolorem eaque error explicabo ipsam minima molestiae, molestias nam, odit perferendis possimus praesentium quas quasi qui quis, quo sequi.</p>
+                </div>
+            </section>
+            <section class="sec2">
+                <h2 class="title">Consectetur adipisicing elit</h2>
+                <div class="container">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi aperiam aspernatur consectetur consequuntur deserunt dolorem dolores ea expedita, hic laboriosam mollitia nulla numquam officia pariatur provident, repellendus temporibus tenetur veniam voluptate! Commodi deleniti fugiat in labore laudantium officia quae unde? Accusantium alias cumque debitis eos ipsum odit repudiandae sequi, voluptatibus! Alias architecto asperiores corporis culpa fuga minima natus quam qui, recusandae suscipit ullam unde veniam voluptatem. Accusamus cum debitis delectus dolorem eaque error explicabo ipsam minima molestiae, molestias nam, odit perferendis possimus praesentium quas quasi qui quis, quo sequi.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi aperiam aspernatur consectetur consequuntur deserunt dolorem dolores ea expedita, hic laboriosam mollitia nulla numquam officia pariatur provident, repellendus temporibus tenetur veniam voluptate! Commodi deleniti fugiat in labore laudantium officia quae unde? Accusantium alias cumque debitis eos ipsum odit repudiandae sequi, voluptatibus! Alias architecto asperiores corporis culpa fuga minima natus quam qui, recusandae suscipit ullam unde veniam voluptatem. Accusamus cum debitis delectus dolorem eaque error explicabo ipsam minima molestiae, molestias nam, odit perferendis possimus praesentium quas quasi qui quis, quo sequi.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi aperiam aspernatur consectetur consequuntur deserunt dolorem dolores ea expedita, hic laboriosam mollitia nulla numquam officia pariatur provident, repellendus temporibus tenetur veniam voluptate! Commodi deleniti fugiat in labore laudantium officia quae unde? Accusantium alias cumque debitis eos ipsum odit repudiandae sequi, voluptatibus! Alias architecto asperiores corporis culpa fuga minima natus quam qui, recusandae suscipit ullam unde veniam voluptatem. Accusamus cum debitis delectus dolorem eaque error explicabo ipsam minima molestiae, molestias nam, odit perferendis possimus praesentium quas quasi qui quis, quo sequi.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi aperiam aspernatur consectetur consequuntur deserunt dolorem dolores ea expedita, hic laboriosam mollitia nulla numquam officia pariatur provident, repellendus temporibus tenetur veniam voluptate! Commodi deleniti fugiat in labore laudantium officia quae unde? Accusantium alias cumque debitis eos ipsum odit repudiandae sequi, voluptatibus! Alias architecto asperiores corporis culpa fuga minima natus quam qui, recusandae suscipit ullam unde veniam voluptatem. Accusamus cum debitis delectus dolorem eaque error explicabo ipsam minima molestiae, molestias nam, odit perferendis possimus praesentium quas quasi qui quis, quo sequi.</p>
+                </div>
+            </section>
+            <!--end section.-->
+            <!--start Footer-->
+            <footer></footer>
+            <!--end Footer-->
+        </div>
+        <!--Wrapper end-->
+        <script type="text/javascript" src="js/libs.min.js" defer></script>
+        <script type="text/javascript" src="js/commond.js" defer></script>
+        <!--<script>-->
+            <!--new WOW().init();-->
+        <!--</script>-->
+        <!--<script type="text/javascript">-->
+            <!--$(document).ready(function() {-->
+                <!--$(".gallery").lightGallery({-->
+                    <!--selector: '.img_link'-->
+                <!--});-->
+            <!--});-->
+        <!--</script>-->
+
+    </body>
+</html>

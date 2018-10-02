@@ -1,0 +1,172 @@
+@import "mixins/var-main";
+
+
+header {
+  background: #1a1a1a;
+  text-align: right;
+  padding: 15px 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  .list_navbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 0px;
+    visibility: hidden;
+    transition: 0.3s;
+    text-align: center;
+    li {
+      padding: 0;
+      a {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        padding: 25px 20px;
+        font-size: 16px;
+        font-weight: 300;
+        &:hover {
+          background: #55ae9c;
+        }
+      }
+    }
+  }
+  .btn_navbar {
+    background: none;
+    border: none;
+    font-size: 34px;
+    color: #fff;
+  }
+  &.open_navbar {
+    .list_navbar {
+      height: 90px;
+      visibility: visible;
+    }
+  }
+}
+/****----------- Header End ------------****/
+
+.slider_main {
+  max-width: 100%;
+  position: relative;
+  margin:auto;
+  overflow: hidden;
+  height: 500px;
+  .item__slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 500px;
+    transition: 1s;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .btn_arrows {
+    background: rgba(0, 0, 0, 0.4);
+    border: none;
+    color: #fff;
+    display: inline-block;
+    padding: 12px;
+    position: absolute;
+    font-size: 18px;
+    transition: 0.4s;
+    z-index: 555;
+    &:hover {
+      background: #000;
+    }
+    &.left {
+      top: 50%;
+      left: 30px;
+      margin-top: -30px;
+    }
+    &.right {
+      top: 50%;
+      right: 30px;
+      margin-top: -30px;
+    }
+  }
+  .caption_slider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 55;
+    text-align: center;
+    padding: 40px;
+    h1 {
+      font-size: 30px;
+      color: #fff;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    }
+  }
+  .fade_in {
+    animation-name: rotate;
+    animation-duration: 2.5s;
+    @keyframes rotate {
+      0% {
+        transform: scale(1.5);
+      }
+      100% {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+.sec1 {
+  padding: 0;
+  height: auto;
+  background: #fffd98;
+  .title {
+    width: 100%;
+    padding: 20px;
+    background: #2653b4;
+    color: #fff;
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    height: 70px;
+    margin: 0;
+    z-index: 999;
+    top: 0;
+  }
+  .container {
+    padding: 90px 0;
+  }
+}
+
+.sec2 {
+  padding: 0;
+  height: auto;
+  position: relative;
+  background: #eafaed;
+  .title {
+    width: 100%;
+    padding: 20px;
+    background: #2653b4;
+    color: #fff;
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    height: 70px;
+    z-index: 999;
+    margin: 0;
+    top: 0;
+  }
+  .container {
+    padding: 90px 0;
+  }
+}
+
+
+/****----------- Sections End ------------****/
+
+footer {}
+/****----------- Footer End ------------****/

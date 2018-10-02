@@ -1,0 +1,19 @@
+/* ========================== BUTTON ==================================  */
+/*_______ button-main ________*/
+.btn_main {
+  display: inline-block;
+  padding: 9px 35px;
+  font-size: 14px;
+  color: #fff;
+  background: #e21515;
+  text-decoration: none;
+  border: none; }
+  .btn_main:active {
+    -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+            transform: scale(0.9); }
+
+/*_______ button-order ________*/
+/*_______ paginator ________*/
+/*_______ breadcrumps ________*/
+/*_______ networks ________*/
